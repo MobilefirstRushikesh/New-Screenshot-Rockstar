@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "857074805157",
-    "project_id": "screenshot-rockstar",
-    "storage_bucket": "screenshot-rockstar.appspot.com"
+    "project_number": "423689146524",
+    "project_id": "screenshot-rockstar-e78ed",
+    "storage_bucket": "screenshot-rockstar-e78ed.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:857074805157:android:257452366208c7b25ce04c",
+        "mobilesdk_app_id": "1:423689146524:android:2060a828b1c506707e9d59",
         "android_client_info": {
           "package_name": "com.screenshot.rockstar"
         }
       },
       "oauth_client": [
         {
-          "client_id": "857074805157-q8sk24mdpvkofjhkq2oam4lfq9lc02q1.apps.googleusercontent.com",
+          "client_id": "423689146524-0bheue6vm2j3qas98d8amasr3aj8rkjo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.screenshot.rockstar",
+            "certificate_hash": "1bd56bc96faacc997548bd4e86fb78837802cbd0"
+          }
+        },
+        {
+          "client_id": "423689146524-3q31ncmi165oj3c7th4cdprkpkgc48m8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAQqyY_sXL-Vq1GKW3zKX6i5vpoVB8hjy8"
+          "current_key": "AIzaSyCNTsEiOKhIXM9iy3zitHM0XibkmitSbGg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "857074805157-q8sk24mdpvkofjhkq2oam4lfq9lc02q1.apps.googleusercontent.com",
+              "client_id": "423689146524-3q31ncmi165oj3c7th4cdprkpkgc48m8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
