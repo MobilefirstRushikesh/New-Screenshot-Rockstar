@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_selectAll"
+        android:title="@string/select_all" />
+
+    <item
+        android:id="@+id/menu_sortBy"
+        android:title="@string/sort_by">
+        <menu>
+            <group
+                android:id="@+id/sortGroup"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_sortBy_asc"
+                    android:title="@string/date_added_oldest"/>
+                <item
+                    android:id="@+id/menu_sortBy_desc"
+                    android:title="@string/date_added_newest"/>
+            </group>
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_change_directory"
+        android:title="@string/change_directory" />
+
+</menu>

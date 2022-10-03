@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tag_sheet_upper_corners_round_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/tagSheet_rel1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/add_tag_title_bg_blue_tint">
+
+        <ImageView
+            android:id="@+id/btn__tagSheet_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:src="@drawable/ic_svg_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_tag"
+            android:textAppearance="@style/TextStyle_Normal"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/tagSheet_NewChipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagSheet_rel1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:splitMotionEvents="true"
+        android:theme="@style/Widget.MaterialComponents.Chip.Entry"
+        app:singleLine="false">
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <EditText
+        android:id="@+id/edit_tag"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tagSheet_NewChipGroup"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_edit_tag"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center_vertical"
+        android:hint="@string/enter_tag_name"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="25"
+        android:paddingStart="16dp"
+        android:textAppearance="@style/TextStyle_Normal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/theme_secondary_grey"
+        android:textCursorDrawable="@drawable/edit_text_cursor_color"
+        app:layout_flexGrow="1"
+        tools:ignore="RtlSymmetry" />
+
+    <ScrollView
+        android:id="@+id/tagSheet_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/edit_tag"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/tagsheet_OldChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:splitMotionEvents="true"
+            android:theme="@style/Widget.MaterialComponents.Chip.Entry"
+            app:singleLine="false">
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_tagSheet_done"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tagSheet_scrollView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_edit_tag"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Done"
+        android:textAppearance="@style/TextStyle_Normal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/theme_secondary_grey"
+        android:textCursorDrawable="@drawable/edit_text_cursor_color"
+        app:layout_flexGrow="1"
+        tools:ignore="RtlSymmetry" />
+
+
+</RelativeLayout>

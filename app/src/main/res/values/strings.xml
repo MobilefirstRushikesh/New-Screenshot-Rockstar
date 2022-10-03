@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Screenshot Rockstar</string>
+    <string name="title_activity_on_boarding">OnBoarding</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- onBoard Strings -->
+    <string name="magic_ai">Magic of AI</string>
+    <string name="privacy_first">Privacy First</string>
+    <string name="authorize">Authorize</string>
+    <string name="image_permission">Image Permission</string>
+    <string name="skip">Skip</string>
+
+    <!-- SearchActivity Strings -->
+    <string name="no_result">No results found for: "%1$s"</string>
+    <string name="empty_model_list">Oops No results found!"</string>
+    <string name="all_images_hidden">No contents Available!Change directory to view the contents.</string>
+
+    <string name="tag_photo_count">"%1$s photos"</string>
+    <string name="search_text">Search Your Screenshots or Tags</string>
+    <string name="share">SHARE</string>
+    <string name="add_tag">Add tag</string>
+    <string name="hide_tag">HIDE</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="view_hidden_shots">View Hidden Shots</string>
+    <string name="hidden_shots">Hidden Shots</string>
+    <string name="delete">delete</string>
+    <string name="new_screenshots_detected">New screenshots detected</string>
+
+    <!-- AlertDialog Strings -->
+    <string name="directory_not_Found_title">Directory issue!</string>
+    <string name="directory_not_Found">"DCIM/ScreenShots" directory not found</string>
+    <string name="no_image_Found_title">No Images Found!</string>
+    <string name="no_image_Found">This Directory has no images. Want to change Directory?</string>
+    <string name="change_directory">Change Directory</string>
+    <string name="no">No</string>
+    <string name="set_manually">Set manually</string>
+    <string name="retry">Retry</string>
+    <string name="select_all">Select All</string>
+    <string name="delete_confirm_text">Are you sure, you want to delete your screenshot?</string>
+    <string name="support">Support</string>
+    <string name="send">Send</string>
+    <string name="your_email_address">Your email address</string>
+    <string name="write_your_massage_here">Write your massage here</string>
+    <string name="sort_by">View Older</string>
+    <string name="date_added_oldest">Oldest Date</string>
+    <string name="date_added_newest">Newest Date</string>
+    <string name="please_select_an_item_first">Please select an item first</string>
+    <string name="refresh">Refresh</string>
+    <string name="filter">Filter</string>
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="jadoo_basic">Jaadoo Basic</string>
+    <string name="go_pro_get_much_more"><![CDATA[Go Pro & Get Much More]]></string>
+    <string name="basic_card_content">Jaadoo basic allows you to process, tag and share your last 200 screenshots.</string>
+    <string name="free">Free</string>
+    <string name="jadoo_pro_monthly">Jaadoo Pro Monthly</string>
+    <string name="jadoo_pro_yearly">Jaadoo Pro Yearly</string>
+    <string name="jadoo_pro_content">Jaadoo pro allows you to process, tag and share unlimited screenshots.</string>
+    <string name="price_month">$0.99/month</string>
+    <string name="price_year">$9.99/year</string>
+    <string name="term_of_service_privacy_policy"><![CDATA[Terms of Service & Privacy Policy]]></string>
+    <string name="proceed_with_basic">Proceed with Basic</string>
+    <string name="proceed_with_pro_yearly">Proceed with Pro (yearly)</string>
+    <string name="proceed_with_pro_monthly">Proceed with Pro (monthly)</string>
+    <string name="upgrade_for_jadoo_pro">Upgrade to Jaadoo Pro</string>
+    <string name="upgrade_for_jaadoo_annual">Upgrade to Jaadoo Pro Annual</string>
+    <string name="upgraded_to_jaadoo_annual">Jaadoo Pro User</string>
+
+
+    <string name="base64key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlO94XL1kVVGe2bcQHEwTAJ6uajkOTsW8WRaNVMeibea7VCz9XYL0mG+r11YwfB/lP/g4w1txHiz+/Ctqo73S4BjwTRWYx/yEqKEAe2Mq9cV0QitCC9B3RPJTu8l6xLdaBMhOx6e4LvADtiyA0Q9ULXvl62oWICTdv8Smbo53QHUupxh211kCmwVY/CRZABig3c82nnap2HCLeM16vVvYnt5P5JfvA+1to2dNfmzuCUG6Aji4coq/0N3fTi8tvcxwvmCSTaJu4TNlM1/vY3WLSZU38yzrh2ehOVUzvIUexGXh3m7+nIvKltT5o/SEnBPl6MWfwcAy2lSTrkeNBj0QdwIDAQAB</string>
+    <string name="checking_subscription">Checking Subscription…</string>
+    <string name="active">Active</string>
+    <string name="proceed">Proceed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting_up_things">Setting Up Things…</string>
+    <string name="need_help">Need Help?</string>
+    <string name="enter_tag_name">Enter tag name</string>
+    <string name="view_older">View Older</string>
+    <string name="about_us">About Us</string>
+    <string name="select_at_least_one">select at least 1 shot</string>
+    <string name="long_press_to_select">Long press to select.</string>
+</resources>

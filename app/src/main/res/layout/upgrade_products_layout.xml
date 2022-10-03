@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_blue_primary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/upgrade_product_card_basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:strokeWidth="1dp"
+        app:cardBackgroundColor="@color/theme_blue_primary_varient"
+        app:strokeColor="@color/theme_light_grey_E7E7E7"
+        app:cardElevation="0dp"
+        app:contentPadding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/upgrade_product_card_basic_txt_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jadoo_basic"
+                android:textAppearance="@style/TextStyle_Medium"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/upgrade_product_card_basic_txt_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upgrade_product_card_basic_txt_headline"
+                android:layout_marginTop="5dp"
+                android:text="@string/basic_card_content"
+                android:textAppearance="@style/TextStyle_Normal"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/upgrade_product_rel_free"
+                android:layout_width="match_parent"
+                android:layout_below="@id/upgrade_product_card_basic_txt_desc"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/upgrade_product_card_basic_txt_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/upgrade_product_img_free_blank"
+                    android:layout_alignBottom="@id/upgrade_product_img_free_blank"
+                    android:text="@string/free"
+                    android:textAppearance="@style/TextStyle_SemiBold"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/upgrade_product_img_free_blank"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_check_blank_circle"
+                    android:layout_alignParentEnd="true"
+                    app:tint="@color/theme_accent_pink"
+                    android:layout_marginEnd="2dp" />
+
+                <ImageView
+                    android:id="@+id/upgrade_product_img_free_checked"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_checked"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="2dp"
+                    app:tint="@color/theme_accent_pink"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/upgrade_product_img_free_checked_active"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_tick"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="2dp"
+                    app:tint="@color/theme_accent_pink"
+                    android:background="@drawable/bg_subscription_active"
+                    android:scaleType="centerInside"
+                    android:visibility="gone"
+                     />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

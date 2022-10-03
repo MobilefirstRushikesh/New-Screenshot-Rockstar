@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chip xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chip_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="this is chip"
+    android:textAppearance="@style/TextStyle_Normal"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    app:chipBackgroundColor="@color/theme_accent_pink"
+    app:chipIcon="@drawable/ic_tag_line"
+    app:chipIconSize="16dp"
+    app:chipStartPadding="10dp"
+    app:closeIconEnabled="true"
+    app:closeIconEndPadding="5dp"
+    app:closeIconSize="16dp"
+    app:closeIconTint="@color/white" />

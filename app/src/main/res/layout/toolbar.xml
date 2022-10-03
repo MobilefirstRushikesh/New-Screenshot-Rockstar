@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/theme_blue_primary"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/toolbar_headline"
+            style="@style/TextStyle_Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Twitter Notes"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.40"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <TextView
+            android:id="@+id/toolbar_photoCount"
+            style="@style/TextStyle_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Photos"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar_headline"
+            app:layout_constraintStart_toStartOf="@+id/toolbar_headline"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_headline" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="30dp"
+    android:background="@color/theme_blue_primary_varient"
+    android:paddingHorizontal="20dp">
+
+    <TextView
+        android:id="@+id/bottomProgress_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Deleting images..."
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/bottomProgress_progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:progressTint="@color/theme_blue_tint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomProgress_txt_title" />
+
+    <TextView
+        android:id="@+id/bottomProgress_txt_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        android:text="100"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/bottomProgress_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/bottomProgress_progressBar" />
+
+    <TextView
+        android:id="@+id/bottomProgress_txt_slash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        android:text="/"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/bottomProgress_txt_total"
+        app:layout_constraintTop_toBottomOf="@+id/bottomProgress_progressBar" />
+    <TextView
+        android:id="@+id/bottomProgress_txt_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/bottomProgress_txt_slash"
+        app:layout_constraintTop_toBottomOf="@+id/bottomProgress_progressBar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

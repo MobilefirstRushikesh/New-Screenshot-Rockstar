@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/theme_blue_primary"
+    tools:context=".ui.fragments.OnBoardingFragment"
+    >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_onBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_onBoard_skip">
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/btn_onBoard_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/skip"
+        app:textAllCaps="false"
+        android:textColor="@color/theme_accent_pink"
+        android:textSize="12sp"
+        android:background="#003D3C53"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:dividerPadding="2.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/onBoard_btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline2" />
+
+    <ImageView
+        android:id="@+id/onBoard_btn_next"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_circle_inside_arrow_right"
+        android:visibility="visible"
+        app:tint = "@color/theme_accent_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline2" />
+
+    <Button
+        android:id="@+id/btn_onBoard_authorised"
+        android:layout_width="168dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/rounded_corner_button"
+        android:text="@string/authorize"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:cornerRadius="20dp"
+        app:textAllCaps="false"
+        android:textAppearance="@style/TextStyle_Medium"
+        android:textSize="14sp"
+        app:backgroundTint="@color/theme_accent_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/onBoard_progress_constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/onBoard_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text="@string/checking_subscription"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextStyle_Normal"
+            app:layout_constraintBottom_toTopOf="@+id/onBoard_progressBar"
+            app:layout_constraintEnd_toEndOf="@+id/onBoard_progressBar"
+            app:layout_constraintStart_toStartOf="@+id/onBoard_progressBar" />
+
+        <ProgressBar
+            android:id="@+id/onBoard_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

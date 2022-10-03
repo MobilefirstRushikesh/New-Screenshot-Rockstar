@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/theme_blue_primary_varient"
+    tools:context=".ui.fragments.SearchFragment">
+
+    <FrameLayout
+        android:id="@+id/frame_searchBar"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear_MainBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                android:background="@drawable/bg_search_edit">
+
+                <ImageView
+                    android:id="@+id/search_img_search"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    app:tint="@color/white"
+                    android:src="@drawable/ic_search" />
+
+                <EditText
+                    android:id="@+id/etSearch"
+                    style="@style/TextStyle_Normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@+id/search_cancel"
+                    android:layout_toEndOf="@id/search_img_search"
+                    android:background="@null"
+                    android:hint="@string/search_text"
+                    android:maxLines="1"
+                    android:paddingHorizontal="8dp"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextStyle_Normal"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/theme_secondary_grey"
+                    android:textCursorDrawable="@drawable/edit_text_cursor_color"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/search_cancel"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_svg_close"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_search_detail"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                app:tint="@color/theme_accent_pink"
+                android:src="@drawable/ic_detail" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_multiselectBar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:visibility="gone">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_multiSelect_cancel"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:text="@string/cancel" />
+
+            <ImageButton
+                android:id="@+id/btn_multiSelect_tag"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@+id/btn_multiSelect_share"
+                android:scaleType="centerInside"
+                app:tint="@color/theme_accent_pink"
+                android:src="@drawable/ic_tag_line" />
+
+            <ImageButton
+                android:id="@+id/btn_multiSelect_share"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                app:tint="@color/theme_accent_pink"
+                android:src="@drawable/ic_share" />
+
+            <ImageButton
+                android:id="@+id/btn_multiSelect_delete"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@+id/btn_multiSelect_tag"
+                android:scaleType="centerInside"
+                app:tint="@color/theme_accent_pink"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_multiSelect_hide"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@+id/btn_multiSelect_tag"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_hidden_eye"
+                />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linear_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_searchBar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+     >
+
+        <TextView
+            style="@style/TextStyle_Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="12dp"
+            android:text="@string/filter" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/filter_chipGroup"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:splitMotionEvents="true"
+                android:visibility="visible"
+                app:singleLine="true" />
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTag"
+        android:layout_below="@id/linear_filter"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="gone"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/search_swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rvTag"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvuser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/txt_oops"
+        style="@style/TextStyle_Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvTag"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linear_detected"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/frame_searchBar"
+        android:layout_margin="12dp"
+        android:alpha="0.92"
+        android:background="@drawable/bg_warning_detected"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextStyle_Normal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextStyle_Normal"
+            android:textSize="14sp"
+            android:text="@string/new_screenshots_detected" />
+
+        <TextView
+            android:id="@+id/btn_refresh"
+            android:layout_width="81dp"
+            android:layout_height="28dp"
+            android:textAppearance="@style/TextStyle_Normal"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_refresh_button"
+            android:backgroundTint="@color/theme_blue_primary"
+            android:textColor="@color/white"
+            android:text="@string/refresh"
+            app:cornerRadius="18dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/frmProgress"
+        android:layout_width="303dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_search_edit"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/TextStyle_Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextStyle_Normal"
+            android:textSize="14sp"
+            android:text="Importing screenshots: 0"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/prBar"
+            android:layout_width="151dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="8dp"
+            app:trackCornerRadius="10dp"
+            android:layout_below="@id/tvStatus"
+            android:layout_centerHorizontal="true"
+            app:trackColor="#1A221F25"
+            app:indicatorColor="@color/theme_accent_pink"/>
+
+
+    </RelativeLayout>
+
+    <!--<com.google.android.gms.ads.AdView
+        android:id="@+id/homeScreen_bannerAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111" />-->
+
+
+</RelativeLayout>

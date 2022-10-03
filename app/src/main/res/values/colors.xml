@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#9938FF</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="green">#1B5E20</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="transparent_white_6">#0FFFFFFF</color>
+    <color name="transparent_red_6">#0FB71C1C</color>
+    <color name="transparent_white_2">#33FFFFFF</color>
+
+    <!--Main theme colours-->
+    <color name="theme_violet">#9938FF</color>
+    <color name="theme_black_221F25">#221F25</color>
+    <color name="theme_medium_grey_B1AEB4">#B1AEB4</color>
+    <color name="theme_light_grey_E7E7E7">#E7E7E7</color>
+    <color name="theme_dark_grey_5D585F">#5D5B5F</color>
+
+    <color name="selected_foreGround">#35000000</color>
+    <color name="access_denied_foreGround">#80000000</color>
+    <color name="deselected_foreGround">#00000000</color>
+
+    <color name="delete_button_ripple">#FF5858</color>
+    <color name="bg_toast_color">#221F25</color>
+    <color name="image_background_color">#5C9938FF</color>
+
+    <!-- TODO apply these colors as main theme  -->
+
+    <color name="theme_blue_primary">#17162F</color>
+    <color name="theme_blue_primary_varient">#2E2D44</color>
+    <color name="theme_blue_tint">#3D3C53</color>
+    <color name="theme_accent_pink">#FB27A5</color>
+    <color name="theme_accent_sky_blue">#0B84FF</color>
+    <color name="theme_secondary_grey">#9B9A9C</color>
+    <color name="theme_secondary_grey_varient">#D3D3DA </color>
+    <color name="bright_yellow">#FFCD00</color>
+
+    <color name="transparent">#00000000</color>
+</resources>

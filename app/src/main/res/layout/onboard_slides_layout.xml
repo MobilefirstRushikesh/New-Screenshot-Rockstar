@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_blue_primary">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/onBoard_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/magicstickicon_animate" />
+
+    <TextView
+        android:id="@+id/onBoard_desc"
+        style="@style/onBoardText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="Jaadoo uses AI to make all your screenshots searchable. Whether you use screenshots to keep notes, bills, etc - now simply just search for what you are looking for instead of endless scrolling."
+        android:textAppearance="@style/TextStyle_Normal"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onBoard_img" />
+</androidx.constraintlayout.widget.ConstraintLayout>

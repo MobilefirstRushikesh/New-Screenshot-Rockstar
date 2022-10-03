@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="@string/delete_confirm_text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_deleteDialog_cancel"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/cancel"
+        android:textColor="@color/theme_secondary_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_deleteDialog_delete" />
+
+    <Button
+        android:id="@+id/btn_deleteDialog_delete"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        app:backgroundTint="@color/theme_blue_primary"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rippleColor="@color/delete_button_ripple" />
+</androidx.constraintlayout.widget.ConstraintLayout>

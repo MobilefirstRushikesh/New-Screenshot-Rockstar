@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_options_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bsd_rounded_top"
+    android:orientation="vertical"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/tvSelectAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="@string/select_all"
+        android:textAppearance="@style/TextStyle_Medium"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/ic_select_all"
+        app:drawableTint="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_blue_tint"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvViewOlder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="@string/view_older"
+        android:textAppearance="@style/TextStyle_Medium"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/ic_view_order"
+        app:drawableTint="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_blue_tint"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvViewHiddenShort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="@string/view_hidden_shots"
+        android:textAppearance="@style/TextStyle_Medium"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/ic_open_eye"
+        app:drawableTint="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_blue_tint"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvChangeDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="@string/change_directory"
+        android:textAppearance="@style/TextStyle_Medium"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/ic_change_directory"
+        app:drawableTint="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_blue_tint"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvSupport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="@string/support"
+        android:textAppearance="@style/TextStyle_Medium"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/ic_support"
+        app:drawableTint="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_blue_tint"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="@string/about_us"
+        android:textAppearance="@style/TextStyle_Medium"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:drawableEndCompat="@drawable/ic_info"
+        app:drawableTint="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_blue_tint"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="@string/cancel"
+        android:textAppearance="@style/TextStyle_Medium"
+        android:textColor="@color/delete_button_ripple"
+        android:textSize="16sp"
+        app:drawableEndCompat="@drawable/ic_cancle_round"
+        app:drawableTint="@color/delete_button_ripple" />
+
+</LinearLayout>
