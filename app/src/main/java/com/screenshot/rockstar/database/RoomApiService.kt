@@ -115,7 +115,7 @@ interface RoomApiService {
 
     @Transaction
     @Query("SELECT * FROM ImageModel WHERE path IN (:path) ORDER BY creationTime DESC")
-    fun getTagsFromPaths(path: List<String>): Flow<List<ImageWithTags>>
+    suspend fun getTagsFromPaths(path: List<String>): List<ImageWithTags>
 
     @Query("SELECT * FROM TagModel")
     fun getAllTags(): LiveData<List<TagModel>>

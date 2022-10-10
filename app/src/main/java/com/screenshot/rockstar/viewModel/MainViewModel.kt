@@ -176,16 +176,12 @@ class MainViewModel @Inject constructor(
         emit(Resource.loading(data = null))
 
         try {
-
             val pathList = _currentViewedImages.value?.map { it.path }
-
             if (!pathList.isNullOrEmpty()) {
-
-                mainRepository.getTagsFromPaths(pathList).collectLatest { list ->
-
-                    val imageList = mutableListOf<ImageDetail>()
-
-                    list.forEach { imageWithTags ->
+                val totalList = mutableListOf<ImageDetail>()
+                val subLists: List<List<String>> = pathList.chunked(900)
+                subLists.forEach{
+                    mainRepository.getTagsFromPaths(it).forEach { imageWithTags ->
 
                         if (imageWithTags.image.isHidden)
                             return@forEach
@@ -194,12 +190,13 @@ class MainViewModel @Inject constructor(
                             tags = imageWithTags.tags
                         )
 
-                        imageList.add(imageDetail)
+                        totalList.add(imageDetail)
                     }
-
-                    emit(Resource.success(imageList))
                 }
-            } else {
+                emit(Resource.success(totalList))
+
+                }
+             else {
                 emit(Resource.error(message = "No Images Found", data = null))
             }
         } catch (e: Exception) {

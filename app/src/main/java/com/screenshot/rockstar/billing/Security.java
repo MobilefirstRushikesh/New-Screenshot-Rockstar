@@ -1,4 +1,4 @@
-package com.screenshot.rockstar.Billing;
+package com.screenshot.rockstar.billing;
 
 import android.text.TextUtils;
 import android.util.Base64;
