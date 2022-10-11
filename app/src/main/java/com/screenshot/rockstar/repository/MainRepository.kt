@@ -52,7 +52,7 @@ class MainRepository @Inject constructor(
 
     //Tag model queries
     fun getTagsOfImage(path:String) = dao.getTagsOfImage(path)
-    fun getTagsFromPaths(path: List<String>) = dao.getTagsFromPaths(path)
+    suspend fun getTagsFromPaths(path: List<String>) = dao.getTagsFromPaths(path)
     fun getTagIdsFromList(tagList:List<String>) = dao.getTagIdsFromList(tagList)
     fun getAllTags() = dao.getAllTags()
     suspend fun deleteAllTagTable() = dao.deleteAllTagTable()

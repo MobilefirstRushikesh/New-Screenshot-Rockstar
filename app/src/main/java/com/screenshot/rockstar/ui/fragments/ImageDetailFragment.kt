@@ -171,7 +171,6 @@ class ImageDetailFragment : BaseFragment(), ImageSliderAdapter.ImageSliderAdapte
 
 
     private fun bindData(list: List<ImageDetail>) {
-
         if (list.isEmpty()) {
             showToast(requireActivity(), "Wait for a moment.")
             onBackClick()
@@ -237,8 +236,8 @@ class ImageDetailFragment : BaseFragment(), ImageSliderAdapter.ImageSliderAdapte
         }
 
         SearchFragment.isUpdating = true
-
         isUpdate = true
+        setupObservers()
 
     }
 
@@ -251,6 +250,7 @@ class ImageDetailFragment : BaseFragment(), ImageSliderAdapter.ImageSliderAdapte
         )
         SearchFragment.isUpdating = true
         isUpdate = true
+        setupObservers()
         showToast(requireActivity(), "Image Hidden")
 
     }
