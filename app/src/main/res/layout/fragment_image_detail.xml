@@ -59,7 +59,6 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline6_swipe"
         app:layout_constraintStart_toStartOf="@+id/guideline3_swipe"
         app:layout_constraintTop_toTopOf="@+id/guideline7_swipe" />
-
     <LinearLayout
         android:id="@+id/linearLayout_swipe"
         android:layout_width="wrap_content"

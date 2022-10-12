@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/Downloads/app/src/main/res/drawable/bg_bsd_rounded_top.xml" value="0.183" />
+        <entry key="..\:/Users/Admin/Downloads/app/src/main/res/drawable/bg_edit_tag.xml" value="0.1255" />
+        <entry key="..\:/Users/Admin/Downloads/app/src/main/res/drawable/bg_placeholder.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/Downloads/app/src/main/res/drawable/bg_search_edit.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/Downloads/app/src/main/res/drawable/pink_circle_bg.xml" value="0.137" />
+        <entry key="..\:/Users/Admin/Downloads/app/src/main/res/layout/activity_search.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/Downloads/app/src/main/res/layout/fragment_image_detail.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/Downloads/app/src/main/res/layout/layout_main_option_dialog.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Admin/Downloads/app/src/main/res/layout/tag_bottomsheet_layout.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

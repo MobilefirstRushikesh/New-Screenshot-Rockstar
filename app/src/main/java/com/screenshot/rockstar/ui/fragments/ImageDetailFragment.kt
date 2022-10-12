@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.Target
+import com.google.android.material.snackbar.Snackbar
 import com.screenshot.rockstar.R
 import com.screenshot.rockstar.adapters.ImageSliderAdapter
 import com.screenshot.rockstar.databinding.FragmentImageDetailBinding
@@ -251,7 +252,11 @@ class ImageDetailFragment : BaseFragment(), ImageSliderAdapter.ImageSliderAdapte
         SearchFragment.isUpdating = true
         isUpdate = true
         setupObservers()
-        showToast(requireActivity(), "Image Hidden")
+        Snackbar.make(binding.viewPagerImgDetail,"Hidden",Snackbar.LENGTH_SHORT)
+            .setTextColor(resources.getColor(R.color.theme_accent_pink))
+            .setBackgroundTint(resources.getColor(R.color.theme_blue_tint))
+            .show()
+
 
     }
 
@@ -364,7 +369,11 @@ class ImageDetailFragment : BaseFragment(), ImageSliderAdapter.ImageSliderAdapte
             text
         )
 
-        showToast(requireActivity(), "removed")
+         Snackbar.make(binding.viewPagerImgDetail,"Removed",Snackbar.LENGTH_SHORT)
+            .setTextColor(resources.getColor(R.color.theme_accent_pink))
+            .setBackgroundTint(resources.getColor(R.color.theme_blue_tint))
+            .show()
+
 
         SearchFragment.isUpdating = true
     }
